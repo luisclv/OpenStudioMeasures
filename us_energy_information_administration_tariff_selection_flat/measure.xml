@@ -1,0 +1,534 @@
+<measure>
+  <schema_version>3.0</schema_version>
+  <name>us_energy_information_administration_tariff_selection_flat</name>
+  <uid>5f0dd5ac-0107-497f-9423-c2cb0a9cac3d</uid>
+  <version_id>2ffeb716-9c80-4504-bc51-4c4a6ebe1f0e</version_id>
+  <version_modified>20191202T193548Z</version_modified>
+  <xml_checksum>92578CE8</xml_checksum>
+  <class_name>USEnergyInformationAdministrationTariffSelectionFlat</class_name>
+  <display_name>U.S. Energy Information Administration Tariff Selection-Flat</display_name>
+  <description>This measure sets flat rates for electricity and gas with informationfrom the EIA. Not every year is available for every state. The ratesare average values for a specific year, a specific market sector, anda specific state. It will throw an error if the specific combinationis not available, if so, select a previous year</description>
+  <modeler_description>Read the code, silly.</modeler_description>
+  <arguments>
+    <argument>
+      <name>state</name>
+      <display_name>State</display_name>
+      <type>Choice</type>
+      <units>$/kWh</units>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Texas</default_value>
+      <choices>
+        <choice>
+          <value>Alabama</value>
+          <display_name>Alabama</display_name>
+        </choice>
+        <choice>
+          <value>Alaska</value>
+          <display_name>Alaska</display_name>
+        </choice>
+        <choice>
+          <value>American Samoa</value>
+          <display_name>American Samoa</display_name>
+        </choice>
+        <choice>
+          <value>Arizona</value>
+          <display_name>Arizona</display_name>
+        </choice>
+        <choice>
+          <value>Arkansas</value>
+          <display_name>Arkansas</display_name>
+        </choice>
+        <choice>
+          <value>California</value>
+          <display_name>California</display_name>
+        </choice>
+        <choice>
+          <value>Colorado</value>
+          <display_name>Colorado</display_name>
+        </choice>
+        <choice>
+          <value>Connecticut</value>
+          <display_name>Connecticut</display_name>
+        </choice>
+        <choice>
+          <value>Delaware</value>
+          <display_name>Delaware</display_name>
+        </choice>
+        <choice>
+          <value>District Of Columbia</value>
+          <display_name>District Of Columbia</display_name>
+        </choice>
+        <choice>
+          <value>Federated States Of Micronesia</value>
+          <display_name>Federated States Of Micronesia</display_name>
+        </choice>
+        <choice>
+          <value>Florida</value>
+          <display_name>Florida</display_name>
+        </choice>
+        <choice>
+          <value>Georgia</value>
+          <display_name>Georgia</display_name>
+        </choice>
+        <choice>
+          <value>Guam</value>
+          <display_name>Guam</display_name>
+        </choice>
+        <choice>
+          <value>Hawaii</value>
+          <display_name>Hawaii</display_name>
+        </choice>
+        <choice>
+          <value>Idaho</value>
+          <display_name>Idaho</display_name>
+        </choice>
+        <choice>
+          <value>Illinois</value>
+          <display_name>Illinois</display_name>
+        </choice>
+        <choice>
+          <value>Indiana</value>
+          <display_name>Indiana</display_name>
+        </choice>
+        <choice>
+          <value>Iowa</value>
+          <display_name>Iowa</display_name>
+        </choice>
+        <choice>
+          <value>Kansas</value>
+          <display_name>Kansas</display_name>
+        </choice>
+        <choice>
+          <value>Kentucky</value>
+          <display_name>Kentucky</display_name>
+        </choice>
+        <choice>
+          <value>Louisiana</value>
+          <display_name>Louisiana</display_name>
+        </choice>
+        <choice>
+          <value>Maine</value>
+          <display_name>Maine</display_name>
+        </choice>
+        <choice>
+          <value>Marshall Islands</value>
+          <display_name>Marshall Islands</display_name>
+        </choice>
+        <choice>
+          <value>Maryland</value>
+          <display_name>Maryland</display_name>
+        </choice>
+        <choice>
+          <value>Massachusetts</value>
+          <display_name>Massachusetts</display_name>
+        </choice>
+        <choice>
+          <value>Michigan</value>
+          <display_name>Michigan</display_name>
+        </choice>
+        <choice>
+          <value>Minnesota</value>
+          <display_name>Minnesota</display_name>
+        </choice>
+        <choice>
+          <value>Mississippi</value>
+          <display_name>Mississippi</display_name>
+        </choice>
+        <choice>
+          <value>Missouri</value>
+          <display_name>Missouri</display_name>
+        </choice>
+        <choice>
+          <value>Montana</value>
+          <display_name>Montana</display_name>
+        </choice>
+        <choice>
+          <value>Nebraska</value>
+          <display_name>Nebraska</display_name>
+        </choice>
+        <choice>
+          <value>Nevada</value>
+          <display_name>Nevada</display_name>
+        </choice>
+        <choice>
+          <value>New Hampshire</value>
+          <display_name>New Hampshire</display_name>
+        </choice>
+        <choice>
+          <value>New Jersey</value>
+          <display_name>New Jersey</display_name>
+        </choice>
+        <choice>
+          <value>New Mexico</value>
+          <display_name>New Mexico</display_name>
+        </choice>
+        <choice>
+          <value>New York</value>
+          <display_name>New York</display_name>
+        </choice>
+        <choice>
+          <value>North Carolina</value>
+          <display_name>North Carolina</display_name>
+        </choice>
+        <choice>
+          <value>North Dakota</value>
+          <display_name>North Dakota</display_name>
+        </choice>
+        <choice>
+          <value>Northern Mariana Islands</value>
+          <display_name>Northern Mariana Islands</display_name>
+        </choice>
+        <choice>
+          <value>Ohio</value>
+          <display_name>Ohio</display_name>
+        </choice>
+        <choice>
+          <value>Oklahoma</value>
+          <display_name>Oklahoma</display_name>
+        </choice>
+        <choice>
+          <value>Oregon</value>
+          <display_name>Oregon</display_name>
+        </choice>
+        <choice>
+          <value>Palau</value>
+          <display_name>Palau</display_name>
+        </choice>
+        <choice>
+          <value>Pennsylvania</value>
+          <display_name>Pennsylvania</display_name>
+        </choice>
+        <choice>
+          <value>Puerto Rico</value>
+          <display_name>Puerto Rico</display_name>
+        </choice>
+        <choice>
+          <value>Rhode Island</value>
+          <display_name>Rhode Island</display_name>
+        </choice>
+        <choice>
+          <value>South Carolina</value>
+          <display_name>South Carolina</display_name>
+        </choice>
+        <choice>
+          <value>South Dakota</value>
+          <display_name>South Dakota</display_name>
+        </choice>
+        <choice>
+          <value>Tennessee</value>
+          <display_name>Tennessee</display_name>
+        </choice>
+        <choice>
+          <value>Texas</value>
+          <display_name>Texas</display_name>
+        </choice>
+        <choice>
+          <value>Utah</value>
+          <display_name>Utah</display_name>
+        </choice>
+        <choice>
+          <value>Vermont</value>
+          <display_name>Vermont</display_name>
+        </choice>
+        <choice>
+          <value>Virgin Islands</value>
+          <display_name>Virgin Islands</display_name>
+        </choice>
+        <choice>
+          <value>Virginia</value>
+          <display_name>Virginia</display_name>
+        </choice>
+        <choice>
+          <value>Washington</value>
+          <display_name>Washington</display_name>
+        </choice>
+        <choice>
+          <value>West Virginia</value>
+          <display_name>West Virginia</display_name>
+        </choice>
+        <choice>
+          <value>Wisconsin</value>
+          <display_name>Wisconsin</display_name>
+        </choice>
+        <choice>
+          <value>Wyoming</value>
+          <display_name>Wyoming</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>market</name>
+      <display_name>Market</display_name>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>Commercial</default_value>
+      <choices>
+        <choice>
+          <value>All Sectors</value>
+          <display_name>All Sectors</display_name>
+        </choice>
+        <choice>
+          <value>Residential</value>
+          <display_name>Residential</display_name>
+        </choice>
+        <choice>
+          <value>Industrial</value>
+          <display_name>Industrial</display_name>
+        </choice>
+        <choice>
+          <value>Commercial</value>
+          <display_name>Commercial</display_name>
+        </choice>
+        <choice>
+          <value>Transportation</value>
+          <display_name>Transportation</display_name>
+        </choice>
+        <choice>
+          <value>Other</value>
+          <display_name>Other</display_name>
+        </choice>
+      </choices>
+    </argument>
+    <argument>
+      <name>year</name>
+      <display_name>Year</display_name>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>2018</default_value>
+      <choices>
+        <choice>
+          <value>2001</value>
+          <display_name>2001</display_name>
+        </choice>
+        <choice>
+          <value>2002</value>
+          <display_name>2002</display_name>
+        </choice>
+        <choice>
+          <value>2003</value>
+          <display_name>2003</display_name>
+        </choice>
+        <choice>
+          <value>2004</value>
+          <display_name>2004</display_name>
+        </choice>
+        <choice>
+          <value>2005</value>
+          <display_name>2005</display_name>
+        </choice>
+        <choice>
+          <value>2006</value>
+          <display_name>2006</display_name>
+        </choice>
+        <choice>
+          <value>2007</value>
+          <display_name>2007</display_name>
+        </choice>
+        <choice>
+          <value>2008</value>
+          <display_name>2008</display_name>
+        </choice>
+        <choice>
+          <value>2009</value>
+          <display_name>2009</display_name>
+        </choice>
+        <choice>
+          <value>2010</value>
+          <display_name>2010</display_name>
+        </choice>
+        <choice>
+          <value>2011</value>
+          <display_name>2011</display_name>
+        </choice>
+        <choice>
+          <value>2012</value>
+          <display_name>2012</display_name>
+        </choice>
+        <choice>
+          <value>2013</value>
+          <display_name>2013</display_name>
+        </choice>
+        <choice>
+          <value>2014</value>
+          <display_name>2014</display_name>
+        </choice>
+        <choice>
+          <value>2015</value>
+          <display_name>2015</display_name>
+        </choice>
+        <choice>
+          <value>2016</value>
+          <display_name>2016</display_name>
+        </choice>
+        <choice>
+          <value>2017</value>
+          <display_name>2017</display_name>
+        </choice>
+        <choice>
+          <value>2018</value>
+          <display_name>2018</display_name>
+        </choice>
+      </choices>
+    </argument>
+  </arguments>
+  <outputs/>
+  <provenances/>
+  <tags>
+    <tag>Economics.Life Cycle Cost Analysis</tag>
+  </tags>
+  <attributes>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Analysis Spreadsheet</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Sensitivity Analysis</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>New Construction EE</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Retrofit EE</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Analysis Spreadsheet</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Sensitivity Analysis</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>New Construction EE</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Retrofit EE</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Analysis Spreadsheet</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Sensitivity Analysis</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>New Construction EE</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Retrofit EE</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Measure Type</name>
+      <value>EnergyPlusMeasure</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>OpenStudio Application</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Parametric Analysis Tool</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Software Tool</name>
+      <value>Analysis Spreadsheet</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Sensitivity Analysis</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>New Construction EE</value>
+      <datatype>string</datatype>
+    </attribute>
+    <attribute>
+      <name>Intended Use Case</name>
+      <value>Retrofit EE</value>
+      <datatype>string</datatype>
+    </attribute>
+  </attributes>
+  <files>
+    <file>
+      <filename>os_lib_helper_methods.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>9CFC43FB</checksum>
+    </file>
+    <file>
+      <filename>utility_rates.json</filename>
+      <filetype>json</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>4EAABBB1</checksum>
+    </file>
+    <file>
+      <version>
+        <software_program>OpenStudio</software_program>
+        <identifier>2.0.0</identifier>
+        <min_compatible>2.0.0</min_compatible>
+      </version>
+      <filename>measure.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>script</usage_type>
+      <checksum>ACBC8E22</checksum>
+    </file>
+  </files>
+</measure>
