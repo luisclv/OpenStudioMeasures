@@ -1,9 +1,10 @@
+<?xml version="1.0"?>
 <measure>
   <schema_version>3.0</schema_version>
   <name>us_energy_information_administration_tariff_selection_flat</name>
   <uid>5f0dd5ac-0107-497f-9423-c2cb0a9cac3d</uid>
-  <version_id>2ffeb716-9c80-4504-bc51-4c4a6ebe1f0e</version_id>
-  <version_modified>20191202T193548Z</version_modified>
+  <version_id>50cf08dc-3cd8-4101-a63d-6a16edf9fb06</version_id>
+  <version_modified>20210910T173528Z</version_modified>
   <xml_checksum>92578CE8</xml_checksum>
   <class_name>USEnergyInformationAdministrationTariffSelectionFlat</class_name>
   <display_name>U.S. Energy Information Administration Tariff Selection-Flat</display_name>
@@ -374,8 +375,8 @@
       </choices>
     </argument>
   </arguments>
-  <outputs/>
-  <provenances/>
+  <outputs />
+  <provenances />
   <tags>
     <tag>Economics.Life Cycle Cost Analysis</tag>
   </tags>
@@ -528,7 +529,13 @@
       <filename>measure.rb</filename>
       <filetype>rb</filetype>
       <usage_type>script</usage_type>
-      <checksum>ACBC8E22</checksum>
+      <checksum>AF234BC8</checksum>
+    </file>
+    <file>
+      <filename>json_parser.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>5B99B170</checksum>
     </file>
   </files>
 </measure>
