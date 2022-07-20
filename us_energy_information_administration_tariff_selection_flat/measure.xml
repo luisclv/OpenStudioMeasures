@@ -3,8 +3,8 @@
   <schema_version>3.0</schema_version>
   <name>us_energy_information_administration_tariff_selection_flat</name>
   <uid>5f0dd5ac-0107-497f-9423-c2cb0a9cac3d</uid>
-  <version_id>50cf08dc-3cd8-4101-a63d-6a16edf9fb06</version_id>
-  <version_modified>20210910T173528Z</version_modified>
+  <version_id>b69b9d49-3f76-4fed-a09a-aa29a92ac3bb</version_id>
+  <version_modified>20220414T191857Z</version_modified>
   <xml_checksum>92578CE8</xml_checksum>
   <class_name>USEnergyInformationAdministrationTariffSelectionFlat</class_name>
   <display_name>U.S. Energy Information Administration Tariff Selection-Flat</display_name>
@@ -372,6 +372,14 @@
           <value>2018</value>
           <display_name>2018</display_name>
         </choice>
+        <choice>
+          <value>2019</value>
+          <display_name>2019</display_name>
+        </choice>
+        <choice>
+          <value>2020</value>
+          <display_name>2020</display_name>
+        </choice>
       </choices>
     </argument>
   </arguments>
@@ -515,12 +523,6 @@
       <checksum>9CFC43FB</checksum>
     </file>
     <file>
-      <filename>utility_rates.json</filename>
-      <filetype>json</filetype>
-      <usage_type>resource</usage_type>
-      <checksum>4EAABBB1</checksum>
-    </file>
-    <file>
       <version>
         <software_program>OpenStudio</software_program>
         <identifier>2.0.0</identifier>
@@ -536,6 +538,12 @@
       <filetype>rb</filetype>
       <usage_type>resource</usage_type>
       <checksum>5B99B170</checksum>
+    </file>
+    <file>
+      <filename>utility_rates.json</filename>
+      <filetype>json</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>FE82B5EE</checksum>
     </file>
   </files>
 </measure>
