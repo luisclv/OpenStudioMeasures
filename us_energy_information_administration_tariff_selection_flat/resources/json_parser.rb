@@ -221,7 +221,7 @@ state_hash.each do |st_code, name|
   end
 end
 
-output_file_path = 'C:\Users\luislara\Desktop\EIA energy cost\utility_rates.json'
+output_file_path = "#{Dir.pwd}/utility_rates.json"
 
 File.open(output_file_path, 'wb') do |file|
   file.puts utility_rates.to_json
